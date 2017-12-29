@@ -1,0 +1,15 @@
+#container-myTabungan{
+	width: 100%;
+}
+
+.container-title{
+    width: 100%;
+    padding: 75px 30px 30px 30px;
+}
+
+.font-title{
+	font-family: "Fantasy";
+    font-size: 45px;
+    color: #00729c;
+    font-weight: 400;	
+}
