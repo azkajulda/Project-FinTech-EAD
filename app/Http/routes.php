@@ -14,8 +14,14 @@
 Route::get('/', function () {
     return redirect('/home');
 });
-
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/login', function() {
+	return view("auth.login");
+})->name('login');
+
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/myTabungan','myTabunganController@index');
+
+
+

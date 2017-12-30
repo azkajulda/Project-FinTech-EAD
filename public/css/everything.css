@@ -1,5 +1,5 @@
-#container-myTabungan{
-	width: 100%;
+.container-myTabungan{
+	padding-top: 50px;
 }
 
 .container-title{
@@ -12,4 +12,34 @@
     font-size: 45px;
     color: #00729c;
     font-weight: 400;	
+}
+
+.container-tatacara{
+	height: 310px;
+    width: 100%;
+
+}
+
+.container-imgtatacara{
+	height: 310px;
+	width: 540px;
+	margin-left: 105px;
+
+}
+
+.container-desc{
+	height: 310px;
+	width: 540px;
+	margin-left: 105px;
+
+}
+
+.inline-block {
+    display: inline-block;
+    float: left;
+}
+
+.box-body{
+  width: 100%;
+  padding: 50px;
 }
