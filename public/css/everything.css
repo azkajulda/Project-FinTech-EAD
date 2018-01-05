@@ -1,5 +1,7 @@
 .container-myTabungan{
-	padding-top: 50px;
+	padding-top: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .container-title{
@@ -42,4 +44,19 @@
 .box-body{
   width: 100%;
   padding: 50px;
+}
+
+@media print{
+    .btn-mod {display: none;}
+    .btn-print {display: none;}
+    #carouselExampleIndicators {display: none;}
+    .navbar {display: none;}
+}
+
+.container-about{
+    width: 227px;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 56px;
 }

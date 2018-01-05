@@ -13,11 +13,15 @@
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">  
     <link href="{{asset('css/half-slider.css')}}" rel="stylesheet">
     <link href="{{asset('css/everything.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+
+    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -34,7 +38,7 @@
               <a class="nav-link" href="{{url('/myTabungan')}}">MyTabungan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="{{url('/about')}}">About</a>
             </li>
             <?php if (Auth::guest()): ?>
               <li class="nav-item ">
@@ -59,24 +63,24 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('{{ asset('asset/image/1.jpg') }}');">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h3>Finance Technology</h3>
+              <p>Web Bertemakan Finance</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('{{ asset('asset/image/2.jpg') }}');">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <h3 style="color: #000000;">Tabungan Pelajar</h3>
+              <p style="color: #000000;">Ayo Mendaftar Dari dini!</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('{{ asset('asset/image/3.png') }}');">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <h3>Tabungan Rencana</h3>
+              <p>Anda memiliki mimpi di masa depan, ayo menabung dari sekarang]</p>
             </div>
           </div>
         </div>
@@ -97,16 +101,13 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Kelompok 11 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    
 
   </body>
-
 </html>

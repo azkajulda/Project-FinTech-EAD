@@ -21,7 +21,9 @@ Route::get('/login', function() {
 })->name('login');
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/myTabungan','myTabunganController@index');
+Route::get('/myTabungan','myTabunganController@tampil');
+Route::post('/myTabungan/add','myTabunganController@tambah');
+Route::get('/about','HomeController@about');
 
 
 
